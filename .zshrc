@@ -111,3 +111,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(atuin init zsh)"
+
+. "$HOME/.local/share/../bin/env"

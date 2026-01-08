@@ -13,7 +13,7 @@
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-2"
 theme='style-9'
-
+locker="$HOME/.config/i3/bin/lock.sh"
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostname`
@@ -99,7 +99,7 @@ case ${chosen} in
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
 			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock -c 000000 
+			$HOME/.config/i3/bin/lock.sh	
 		fi
         ;;
     $suspend)

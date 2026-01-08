@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $paper ~/wallpaper/Zeta_Oph_Runaway_Star.jpeg
 exec_always feh --bg-scale $paper
+exec /usr/bin/compton -i 0.9 -c -f
 
 set $mod Mod4
 
@@ -30,7 +31,8 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --nofork
+set $locker ~/.config/i3/bin/lock.sh
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $locker
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.

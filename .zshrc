@@ -113,3 +113,4 @@ source $ZSH/oh-my-zsh.sh
 eval "$(atuin init zsh)"
 
 . "$HOME/.local/share/../bin/env"
+source /home/remy/.config/op/plugins.sh

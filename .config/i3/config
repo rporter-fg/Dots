@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $paper ~/wallpaper/Zeta_Oph_Runaway_Star.jpeg
 exec_always feh --bg-scale $paper
-exec /usr/bin/compton -i 0.9 -c -f
+exec /usr/bin/compton -i 0.9 -c -f --corner-radius 10
 
 set $mod Mod4
 
